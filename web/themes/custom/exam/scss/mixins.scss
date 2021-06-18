@@ -1,0 +1,23 @@
+@mixin textline() {
+  h2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    font-weight: 700;
+    color: $backblue;
+    &:before,
+    &:after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid $gray;
+    }
+    &:not(:empty)::before {
+      margin-right: .25em;
+    }
+    &:not(:empty)::after {
+      margin-left: .25em;
+    }
+  }
+}

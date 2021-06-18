@@ -1,0 +1,284 @@
+@import "mixins";
+@import "variables";
+
+#block-news {
+  @include textline;
+}
+.block-views-blocknews-news-block-1 {
+  padding: 50px 0;
+  background: repeating-linear-gradient(-45deg, #E8E8E8, #E8E8E8 1px, white 3px, white 8px);
+  .view-news-news {
+    .view-content {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+      gap: 20px;
+      padding: 0 15px;
+    }
+  }
+
+}
+.node--view-mode-teaser h2 {
+  display: none;
+}
+.block-views-blocknews-news-block-1  {
+  .views-exposed-form {
+
+    .form-row {
+      .js-form-item-title {
+        color: $gray;
+        input {
+          color: $gray;
+        }
+      }
+      .form-actions {
+        padding-bottom: 1px;
+        #edit-submit-news-news {
+          background-color: #67bfdc;
+          border: none;
+          height: 36px;
+          width: 70px;
+
+        }
+      }
+    }
+  }
+  .node--view-mode-teaser {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 15px;
+    .layout--threecol-section--25-50-25 {
+      .layout__region--first {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 1 10%;
+        padding-right: 10px;
+        .block-layout-builder {
+          margin-top: -8px;
+          &:first-child {
+            text-transform: uppercase;
+            font-size: 30px;
+            color: $backblue;
+            margin-bottom: -18px;
+
+          }
+          &:nth-child(2) {
+            font-size: 50px;
+            color: $mainblue;
+            font-weight: 700;
+            margin-bottom: -10px;
+          }
+          &:last-child {
+            margin-bottom: -9px;
+            color: $gray;
+          }
+        }
+      }
+      .layout__region--second {
+        display: flex;
+        flex: 0 1 74%;
+        font-size: 12px;
+        .field--name-field-news-image {
+          padding-left: 10px;
+          border-left: 1px solid $gray;
+          img {
+
+
+            margin: 0;
+
+          }
+        }
+        .field--name-field-news-who-writer {
+          color: $gray;
+          padding-right: 2px;
+          padding-left: 6px;
+        }
+        .field--name-field-news-name {}
+        .field--name-field-news-position {
+          color: $mainblue;
+          padding-left: 2px;
+        }
+      }
+      .layout__region--third {
+        display: flex;
+        flex: 0 1 14%;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $gray;
+      }
+    }
+    .layout--twocol-section--25-75 {
+      display: flex;
+      justify-content: flex-end;
+      .layout__region--second {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 88.3%;
+        border-left: 1px solid $gray;
+        padding-left: 10px;
+        .field--name-field-news-title {
+          font-size: 24px;
+          color: $backblue;
+        }
+        .field--name-body {
+          font-size: 10px;
+          text-transform: uppercase;
+          text-align: justify;
+          padding-bottom: 10px;
+        }
+        .field--name-field-new-read-more-link {
+          float: right;
+          text-transform: uppercase;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100px;
+          height: 30px;
+          background: $backblue;
+          margin: 10px auto 20px;
+          transition: 0.5s;
+          a {
+            color:$white;
+            font-size: 14px;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+@media (max-width: 850px){
+  #block-news {
+    @include textline;
+  }
+  .block-views-blocknews-news-block-1 {
+    padding: 50px 0;
+    background: repeating-linear-gradient(-45deg, #E8E8E8, #E8E8E8 1px, white 3px, white 8px);
+    .view-news-news {
+      .view-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        gap: 20px;
+        padding: 0 15px;
+      }
+    }
+
+  }
+  .node--view-mode-teaser h2 {
+    display: none;
+  }
+  .block-views-blocknews-news-block-1  {
+    .node--view-mode-teaser {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      padding: 10px 15px;
+      .layout--threecol-section--25-50-25 {
+        .layout__region--first {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex: 0 1 10%;
+          padding-right: 10px;
+          .block-layout-builder {
+            margin-top: -8px;
+            &:first-child {
+              text-transform: uppercase;
+              font-size: 30px;
+              color: $backblue;
+              margin-bottom: -18px;
+
+            }
+            &:nth-child(2) {
+              font-size: 50px;
+              color: $mainblue;
+              font-weight: 700;
+              margin-bottom: -10px;
+            }
+            &:last-child {
+              margin-bottom: -9px;
+              color: $gray;
+            }
+          }
+        }
+        .layout__region--second {
+          display: flex;
+          flex: 0 1 74%;
+          font-size: 12px;
+          .field--name-field-news-image {
+            padding-left: 10px;
+            border-left: 1px solid $gray;
+            img {
+
+
+              margin: 0;
+
+            }
+          }
+          .field--name-field-news-who-writer {
+            color: $gray;
+            padding-right: 2px;
+            padding-left: 6px;
+          }
+          .field--name-field-news-name {}
+          .field--name-field-news-position {
+            color: $mainblue;
+            padding-left: 2px;
+          }
+        }
+        .layout__region--third {
+          display: flex;
+          flex: 0 1 14%;
+          font-size: 12px;
+          text-transform: uppercase;
+          color: $gray;
+        }
+      }
+      .layout--twocol-section--25-75 {
+        display: flex;
+        justify-content: flex-end;
+        .layout__region--second {
+          display: flex;
+          flex-direction: column;
+          flex: 0 1 88.3%;
+          border-left: 1px solid $gray;
+          padding-left: 10px;
+          .field--name-field-news-title {
+            font-size: 24px;
+            color: $backblue;
+          }
+          .field--name-body {
+            font-size: 10px;
+            text-transform: uppercase;
+            text-align: justify;
+            padding-bottom: 10px;
+          }
+          .field--name-field-new-read-more-link {
+            float: right;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 30px;
+            background: $backblue;
+            margin: 10px auto 20px;
+            transition: 0.5s;
+            a {
+              color:$white;
+              font-size: 14px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,60 @@
+@import "mixins";
+@import "variables";
+
+.block-views-blockour-team-block-1 {
+  @include textline;
+  padding-top: 30px;
+  .content {
+    .view-our-team {
+      .view-content {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 100px;
+
+        .views-row {
+          .field--name-field-our-team-name {
+            font-size: 24px;
+            color: $backblue;
+            text-align: center;
+            padding-top: 10px;
+          }
+          .field--name-field-our-team-position{
+            text-align: center;
+            font-size: 14px;
+            a {
+              color: $gray;
+            }
+          }
+          .field--name-field-our-team-link{
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 30px;
+            background: $backblue;
+            margin: 10px auto 20px;
+            transition: 0.5s;
+            a {
+              color:$white;
+              font-size: 14px;
+            }
+          }
+          .social-media-links--platforms {
+            float: left;
+            padding-left: 40px;
+          }
+          .flag, .action-unflag{
+            float: right;
+            padding-right: 40px;
+            padding-top: 5px;
+            span {
+              color: $mainblue;
+            }
+          }
+          }
+        }
+      }
+    }
+  }
+

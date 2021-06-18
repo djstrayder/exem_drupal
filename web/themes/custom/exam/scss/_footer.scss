@@ -1,0 +1,19 @@
+@import "mixins";
+@import "variables";
+
+.site-footer {
+  background-color: $backblue;
+  margin-bottom: -20px;
+  .container-fluid {
+    max-width: 1280px;
+
+    .region-footer-fifth {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+
+    }
+  }
+}
+

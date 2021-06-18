@@ -1,0 +1,56 @@
+@import "mixins";
+@import "variables";
+
+.page-node-5 {
+  .view-news-page {
+    .view-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 30px 0 100px 0;
+    }
+  }
+}
+
+.page-node-4 {
+  .container {
+    @include textline;
+  }
+  .view-team {
+    .view-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 30px 0 100px 0;
+    }
+  }
+}
+
+.page-node-6 {
+  .container {
+    @include textline;
+  }
+}
+.page-node-3 {
+  .view-project-for-page {
+    .view-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 30px 0 100px 0;
+      row-gap: 30px;
+    }
+  }
+}
+
+.page-node-2 {
+  .container {
+    @include textline;
+
+  }
+  .view-services-for-page {
+    .view-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 30px 0 100px 0;
+      row-gap: 30px;
+    }
+  }
+}

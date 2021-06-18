@@ -1,0 +1,27 @@
+/* IMPORTS */
+
+//@import url(font-awesome.min.css);
+// variables
+@import "variables";
+// typography
+@import "typography";
+//bootstrap
+@import "bootstrap";
+//material design bootstrap
+//@import "../node_modules/mdbootstrap/scss/mdb-free.scss";
+// mixins
+@import "mixins";
+// barrio
+@import "barrio";
+
+@import "header";
+@import "footer";
+@import "slider";
+@import "our-team";
+@import "project";
+@import "services";
+@import "about";
+@import "news";
+@import "page-contact";
+@import "pages";
+

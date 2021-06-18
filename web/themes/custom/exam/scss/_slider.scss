@@ -1,0 +1,8 @@
+@import "mixins";
+@import "variables";
+
+.block-views-blockclients-block-1 {
+  padding-bottom: 120px;
+  padding-top: 10px;
+  @include textline;
+}

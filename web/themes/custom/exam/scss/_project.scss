@@ -1,0 +1,103 @@
+@import "mixins";
+@import "variables";
+
+#block-services {
+  @include textline;
+  h2 {
+    font-weight: 300;
+  }
+}
+
+.block-views-blockproject-block-1{
+  padding-bottom: 50px;
+  padding-top: 30px;
+  @include textline;
+  background: repeating-linear-gradient(-45deg, #E8E8E8, #E8E8E8 1px, white 3px, white 8px);
+  h2 {
+    font-weight: 300;
+    background-color: white;
+    width: 100%;
+  }
+  .content {
+    .view-project {
+      .view-content {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 100px;
+
+        .views-row {
+          border-bottom: 1px solid $backblue;
+          margin-bottom: -20px;
+          background-color: white;
+          .field--name-field-projects-text {
+            text-align: center;
+            font-size: 24px;
+            padding-top: 10px;
+            color: $backblue;
+          }
+          .field--name-field-project-taxonomy {
+            text-align: center;
+            font-size: 15px;
+            a[href*="/taxonomy/term/7"]{
+              color: #1bbc9b;
+            }
+            a[href*="/php_development"]{
+              color: #e84c3d;
+            }
+            a[href*="/app_development"]{
+              color: #9b58b5;
+            }
+            a[href*="/drupal_project"]{
+              color: #28a9e0;
+            }
+
+          }
+        }
+        .field--name-field-projects-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80px;
+          height: 30px;
+          background: $backblue;
+          margin: 10px auto 20px;
+          transition: 0.5s;
+          a {
+            color:$white;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .js-pager__items {
+      display: flex;
+      justify-content: center;
+      margin-top: -40px;
+      padding-bottom: 100px;
+      font-size: 10px;
+      .page-link {
+        border: none;
+        background: none;
+        color: $backblue;
+        transition: 0.4s;
+        &:hover{
+          background: $gray;
+          border-radius: 50%;
+        }
+      }
+      .active{
+        span {
+          background: $gray;
+          border-radius: 50%;
+          &:hover{
+            border-radius: 5%;
+          }
+        }
+      }
+    }
+
+  }
+
+
+}
+
